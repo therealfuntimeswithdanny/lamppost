@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <!-- Viewport for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="LampPost is the AI image generator that transforms your creative prompts into stunning visuals. Unleash your imagination and share your masterpieces on Bluesky and Reddit."
+    />
+    <meta
+      name="keywords"
+      content="LampPost, AI Image Generator, AI Art, Creative AI, Bluesky, Reddit, cyberpunk, digital art"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="LampPost - AI Image Generator" />
+    <meta
+      property="og:description"
+      content="Unleash your creative potential with LampPost – the AI image generator that transforms ideas into art."
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LampPost - AI Image Generator" />
+    <meta
+      name="twitter:description"
+      content="Discover stunning visuals generated from your creative prompts with LampPost."
+    />
+
+    <!-- Title -->
+    <title>LampPost - Home</title>
+
+    <!-- Font Awesome for icons -->
+
+    <style>
+      /* CSS Variables for consistent theming */
+      :root {
+        --primary-bg: #000000; /* Black background */
+        --accent-color: #ffcc00; /* Bold yellow accent */
+        --border-color: #ffffff; /* Sharp white borders */
+        --text-color: #ffffff; /* White text */
+        --section-bg: #1c1c1c; /* Dark section background */
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: var(--primary-bg);
+        color: var(--text-color);
+      }
+      header {
+        background: var(--primary-bg);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid var(--border-color);
+      }
+      header h1 {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin: 0;
+      }
+      nav {
+        margin: 20px 0;
+      }
+      nav a {
+        color: var(--accent-color);
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 1.2rem;
+      }
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: var(--section-bg);
+      }
+      .hero h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+      .hero a {
+        background: var(--accent-color);
+        color: var(--primary-bg);
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border: 2px solid var(--border-color);
+        transition: background 0.3s ease;
+      }
+      .hero a:hover {
+        background: #e6b800;
+      }
+      
+      a{
+        text-decoration: none;
+        color: var(--accent-color);
+      }
+
+      section {
+        padding: 40px 20px;
+        border-bottom: 2px solid var(--border-color);
+        text-align: center;
+      }
+      section h3 {
+        color: var(--accent-color);
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: var(--primary-bg);
+        border-top: 2px solid var(--border-color);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1><i class="fas fa-lightbulb"></i> LampPost</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="https://lamppost.madebydanny.uk">Generate</a>
+        <a href="https://bsky.app/profile/lamppost.pages.dev"><i class="fa-brands fa-bluesky"></i></a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h2>Welcome to LampPost</h2>
+      <p>
+        Create beautiful, AI-generated images that bring your imagination to life.
+      </p>
+      <a href="https://lamppost.madebydanny.uk"><i class="fas fa-rocket"></i> Get Started</a>
+    </div>
+
+    <!-- Informative Section: How It Works -->
+    <section>
+      <h3>How It Works</h3>
+      <p>
+        Simply enter your creative prompt into our generator, and let Cloudflare do the Rest.<br>
+        Once your image is generated, you can easily share it on platforms like Bluesky and Reddit.
+      </p>
+    </section>
+
+    <!-- Informative Section: Unleash Your Creativity -->
+    <section>
+      <h3>Free and Fast</h3>
+      <p>
+        LampPost is completely free to use and it will be for life, and our AI image generator is designed to be fast and efficient using Cloudflare's fast servers.<br>
+      </p>
+    </section>
+
+    <section>
+      <h3>Share Share Share</h3>
+      <p>
+        LampPost Lets you share you images to apps such as Bluesky, Reddit, Dropbox and more!<br>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; <span id="year"></span> LampPost, <i>A <a href="https://funtimesmedia.uk">Funtimes Media</a> Comapny</i> / Built with <i class="fa-solid fa-heart" style="color: #ffcc00;"></i> on <a href="https://cloudflare.com">Cloudflare</a></p>
+    </footer>
+
+    <!-- Inline script to set the current year -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
