@@ -1,0 +1,139 @@
+  
+    /* CSS Variables for consistent theming */
+    :root {
+      --primary-bg: #000000;    /* Black background */
+      --accent-color: #FFCC00;  /* Bold yellow accent */
+      --border-color: #FFFFFF;  /* Sharp white borders */
+      --text-color: #FFFFFF;    /* White text */
+      --form-bg: #1A1A1A;       /* Dark background for form fields */
+    }
+
+    /* Global styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: var(--primary-bg);
+      color: var(--text-color);
+    }
+
+    /* Container styles */
+    .container {
+      display: flex;
+      max-width: 1200px;
+      height: 100vh;
+      margin: 0 auto;
+      background: #1c1c1c;
+      border: 2px solid var(--border-color);
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      flex: 0 0 300px;
+      background-color: var(--primary-bg);
+      padding: 20px;
+      border-right: 2px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .sidebar h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+    }
+    .sidebar form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .sidebar label {
+      font-size: 1rem;
+      color: var(--accent-color);
+    }
+    .sidebar input[type="text"] {
+      padding: 0.75rem;
+      font-size: 1rem;
+      background: var(--form-bg);
+      color: var(--text-color);
+      border: 2px solid var(--border-color);
+    }
+    .sidebar button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      background: var(--accent-color);
+      color: var(--primary-bg);
+      cursor: pointer;
+      transition: background 0.3s ease;
+      border: 2px solid var(--border-color);
+    }
+    .sidebar button:hover {
+      background: #e6b800;
+    }
+    .sidebar #link {
+      margin-top: 1rem;
+      text-align: center;
+      word-wrap: break-word;
+    }
+    /* Share buttons styling */
+    .shareButton {
+      padding: 0.75rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: 2px solid var(--border-color);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    #shareBluesky {
+      background: var(--accent-color);
+      color: var(--primary-bg);
+    }
+    #shareBluesky:hover {
+      background: #e6b800;
+    }
+    #shareReddit {
+      background: #FF4500;
+      color: var(--primary-bg);
+      margin-left: 0.5rem;
+    }
+    #shareReddit:hover {
+      background: #e03d00;
+    }
+
+    /* Image display styling */
+    .image-display {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary-bg);
+    }
+    .image-display #result {
+      text-align: center;
+    }
+    .image-display #result img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid var(--border-color);
+      border-radius: 0;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid var(--border-color);
+      }
+    }
